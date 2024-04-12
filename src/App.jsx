@@ -111,7 +111,7 @@ function App() {
       <div className=" bg-blue-300  max-w-3xl m-1 rounded-lg px-4 py-8 text-black-500 col-span-8">
       
       <div className= 'rounded-lg overflow-hidden mb-4 grid sm:h-16 h-32 sm:grid-cols-12 grid-cols-2'  >
-        <div className=' bg-white col-span-10 flex sm:mr-10 outline-none sm:h-11/12 h-14 w-11/12 py-1 px-3 rounded-s-full rounded-e-full shadow-sm border-2 border-red-300 text-lg font-bold '>
+        <div className=' bg-white col-span-10 flex sm:mr-10 outline-none sm:h-11/12 h-16 w-11/12 py-1 px-3 rounded-s-full rounded-e-full shadow-sm border-2 border-red-300 text-lg font-bold '>
           <div className=''>
             <input
             type="text"
@@ -123,7 +123,7 @@ function App() {
             />
           </div>
           <div
-          className='color mt-1 py-1 px-3 h-8 w-44 text-base rounded-lg flex justify-center content-center'
+          className='color sm:mt-1 my-0.5  sm:py-2 px-3 sm:h-5/6 h-11/12 w-44 text-base rounded-lg flex justify-center items-center '
           onChange={()=>{setColor({status})}}
           style={{backgroundColor: color} }
           >
@@ -160,7 +160,7 @@ function App() {
             min={1}
             max={50}
             value={length}
-            className='cursor-pointer sm:w-64 w-56'
+            className='cursor-pointer sm:w-64 w-3/4 ml-2 mr-2'
             onChange={(e)=>{setLength(e.target.value)}}
             />
             <button
